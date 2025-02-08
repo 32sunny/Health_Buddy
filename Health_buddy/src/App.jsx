@@ -2,17 +2,21 @@ import './App.css';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import SignUp from './Authentication/Signup';
 import Login from './Authentication/Login';
-import Sidebar from './Components/Sidebar';
+import Sidebar from './Components/Sidebarr';
 import PatientForm from './Components/Profile';
 import Consultaion from './Components/Consultation';
 import Adoption from './Components/Adoption';
 import Home from './Components/Home';
 import CallForm from './Components/CallForm';
 import Footer from './Components/Footer'
+import ChatBot from './Components/Ai';
+import { useState } from 'react';
 
 function Layout() {
   const location = useLocation();
   const hideSidebarPaths = ["/login", "/signup"];
+
+ const [Chatbot ,setChatbot] = useState(false)
 
   return (
     <>
@@ -26,6 +30,8 @@ function Layout() {
         <Route path="/Routine" element={<Adoption />} />
         <Route path="/CallForm" element={<CallForm />} />
       </Routes>
+      <button onClick={()=>setChatbot(!Chatbot)} className='chat_button'> Start Chat </button>
+       {Chatbot ? <ChatBot/> : ""}
       {!hideSidebarPaths.includes(location.pathname) && <Footer/>}
     </>
   );

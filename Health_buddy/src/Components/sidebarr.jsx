@@ -12,6 +12,7 @@ import "../styling/Sidebar.css";
 import logo from "../assets/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 
+
 function Sidebar() {
     const [user, setUser] = useState("");
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -78,6 +79,7 @@ function Sidebar() {
                         </button>
                     )}
                 </div>
+              
             </div>
         </>
     );
