@@ -1,0 +1,150 @@
+.testimonial-container {
+  max-width: 1200px;
+  margin-left: 380px; /* Centering the container */
+  padding: 0 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.testimonial-heading {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.testimonial-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.testimonial-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.testimonial-slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.testimonial-card {
+  min-width: calc(33.333% - 16px);
+  margin-right: 24px;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.testimonial-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 4px 0;
+}
+
+.testimonial-age {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 16px 0;
+}
+
+.testimonial-feedback {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin: 0;
+}
+
+/* Navigation Buttons */
+.nav-button {
+  background: white;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #666;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.left-button {
+  position: absolute;
+  left: -24px;
+}
+
+.right-button {
+  position: absolute;
+  right: -24px;
+}
+
+.nav-button:hover {
+  background: #f5f5f5;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .testimonial-container {
+    padding: 0 15px;
+  }
+
+  .testimonial-card {
+    min-width: calc(50% - 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 400px;
+  }
+
+  .testimonial-card {
+    min-width: 100%;
+    margin-right: 0;
+  }
+
+  .testimonial-carousel {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .left-button {
+    left: 10px;
+  }
+
+  .right-button {
+    right: 10px;
+  }
+}

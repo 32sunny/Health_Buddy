@@ -1,0 +1,170 @@
+.icon {
+    width: 24px;
+    height: 24px;
+    color: #f8f8f8;
+    padding-right: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #aeb0b3;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+ 
+.sidebar-header {
+    background-color: #d6d9e3;
+    height: 100px;
+    img {
+        position: absolute;
+        height: 60px;
+        top: 20px;
+        left: 30px;
+        border-radius: 10px;
+    }
+    
+}
+
+.sidebar-title {
+    font-weight: bold;
+  
+}
+
+.close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(47, 0, 0);
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 16px;
+    
+}
+
+.menu-item {
+    display: flex;
+    justify-content: start; 
+    align-items: center;
+    padding: 12px;
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.menu-item:hover {
+    background:  #176090;
+}
+
+.active {
+    background: #176090;
+    color: rgb(255, 255, 255);
+}
+
+.sign-out-container {
+    padding: 16px;
+    border-top: 1px solid #35455e;
+}
+
+.sign-in-button {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 12px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    border: 1px solid rgb(183, 181, 181);
+    text-decoration: none;
+}
+
+
+.sign-out-button{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    border: 1px solid gray;
+    transition: 0.3s ease, transform 0.2s ease;
+}
+
+.sign-out-button:hover {
+    background-color: rgb(226, 109, 107);
+    color: white;
+}
+.sign-in-button:hover {
+    background-color: rgb(19, 199, 139);
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        margin-left: 0;
+    }
+}
+
+.burger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    color: rgb(24, 0, 0);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #1f2937;
+    color: white;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 1500px) {
+    .burger-menu {
+        display: none;
+    }
+
+    .sidebar {
+        left: 0;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+}

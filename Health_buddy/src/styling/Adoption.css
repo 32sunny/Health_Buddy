@@ -1,0 +1,104 @@
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    overflow: hidden;
+    margin-left: 250px;
+   h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: blueviolet;
+   }
+}
+
+.carousel-wrapper {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-day {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.carousel-day h2 {
+    margin: 0 0 10px 0;
+}
+
+.carousel-day.highlight h2 {
+    background-color: #ffeb3b;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.carousel-item {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    text-align: center;
+    margin-right: 10px;
+    transition:  0.5s;
+    h3{
+        color: rgb(194, 15, 15);
+        font-size: 18px;
+    }
+}
+
+.carousel-item:hover {
+    background-color: rgb(233, 225, 225);
+}
+
+
+
+button {
+    margin: 5px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.setreminder:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+
+
+
+@media screen and (max-width: 1068px) {
+    .carousel-container {
+    margin: 0px;
+    width: 100vw;
+    }
+}

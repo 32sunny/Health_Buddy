@@ -1,0 +1,93 @@
+
+    [
+      {
+        "name": "Diabetes",
+        "description": "A chronic condition that affects how your body processes blood sugar.",
+        "diet": [
+          "Leafy greens",
+          "Whole grains",
+          "Lean proteins",
+          "Low-fat dairy",
+          "Nuts and seeds"
+        ],
+        "exercises": [
+          "Brisk walking",
+          "Cycling",
+          "Yoga",
+          "Strength training"
+        ],
+        "medicines": [
+          "Metformin",
+          "Insulin",
+          "Sulfonylureas"
+        ],
+        "image_url": "https://example.com/diabetes.jpg"
+      },
+      {
+        "name": "Hypertension",
+        "description": "A condition in which the force of the blood against the artery walls is too high.",
+        "diet": [
+          "Low-sodium foods",
+          "Fruits and vegetables",
+          "Lean meats",
+          "Whole grains"
+        ],
+        "exercises": [
+          "Jogging",
+          "Swimming",
+          "Aerobic exercises",
+          "Deep breathing techniques"
+        ],
+        "medicines": [
+          "ACE inhibitors",
+          "Beta-blockers",
+          "Diuretics"
+        ],
+        "image_url": "https://example.com/hypertension.jpg"
+      },
+      {
+        "name": "Asthma",
+        "description": "A condition in which a person's airways become inflamed, narrow and swell, making breathing difficult.",
+        "diet": [
+          "Omega-3 fatty acids",
+          "Fruits and vegetables",
+          "Vitamin D-rich foods"
+        ],
+        "exercises": [
+          "Swimming",
+          "Yoga",
+          "Walking",
+          "Breathing exercises"
+        ],
+        "medicines": [
+          "Inhaled corticosteroids",
+          "Leukotriene modifiers",
+          "Short-acting beta agonists"
+        ],
+        "image_url": "https://example.com/asthma.jpg"
+      },
+      {
+        "name": "Arthritis",
+        "description": "Inflammation of one or more joints, causing pain and stiffness.",
+        "diet": [
+          "Fatty fish",
+          "Berries",
+          "Nuts and seeds",
+          "Whole grains"
+        ],
+        "exercises": [
+          "Stretching",
+          "Strength training",
+          "Swimming",
+          "Tai Chi"
+        ],
+        "medicines": [
+          "NSAIDs",
+          "Corticosteroids",
+          "DMARDs"
+        ],
+        "image_url": "https://example.com/arthritis.jpg"
+      
+    
+  }
+]
