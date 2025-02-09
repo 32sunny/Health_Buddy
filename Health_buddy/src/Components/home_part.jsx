@@ -8,14 +8,14 @@ const PatientIntake = () => {
     <div className="container">
       <h2 className="header">Bypass the Entire Front Desk</h2>
       <p className="description">
-        Make DocResponse your new best employee by automating the entire pre-visit registration & check-in process, freeing up phone lines and streamlining your workflow with clerical data that goes straight to your charts.
+        Make Health Buddy your new best employee by automating the entire pre-visit registration & check-in process, freeing up phone lines and streamlining your workflow with clerical data that goes straight to your charts.
       </p>
       <h3 className="sub-header">The #1 Companion For Healthcare Professionals Everywhere</h3>
       <div className="content">
         <div className="text-section">
           <h4 className="section-title">Patient Intake Made Easy</h4>
           <p className="text">
-            Greet new patients with a smile and let DocResponse worry about administrative tasks like patient registration, insurance info, and screening.
+            Greet new patients with a smile and let Health Buddy worry about administrative tasks like patient registration, insurance info, and screening.
           </p>
           <ul className="features-list">
             <li>✅ Capture demographics, pre-visit registration, insurance & diagnosis</li>
