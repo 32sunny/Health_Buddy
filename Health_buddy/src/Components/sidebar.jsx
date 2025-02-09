@@ -3,7 +3,7 @@ import {
     Calendar,
     Home,
     LogOut,
-    Settings,
+    Info,
     User
 } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -50,11 +50,11 @@ function Sidebar() {
 
                 <ul className="sidebar-menu">
                     {[
-                        { path: '/', icon: <Home className="icon" />, label: "Home" },      
-                        { path: '/Routine', icon: <Calendar className="icon" />, label: "Routines" },
+                        { path: '/', icon: <Home className  ="icon" />, label: "Home" },      
                         { path: '/Consultation', icon: <Activity className="icon" />, label: "Consultation" },
+                        { path: '/Routine', icon: <Calendar className="icon" />, label: "Routines" },
                         { path: '/profile', icon: <User className="icon" />, label: "Profile" },
-                        { path: '/settings', icon: <Settings className="icon" />, label: "Settings" }
+                        { path: '/About', icon: <Info className="icon" />, label: "About us" }
                     ].map((item) => (
                         <li key={item.path}>
                             <NavLink

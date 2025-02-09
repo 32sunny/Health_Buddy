@@ -28,7 +28,7 @@ const CallForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        await axios.post('http://localhost:5000/api/add', {
+        await axios.post('https://deploy-backend-3-kp6o.onrender.com/api/add', {
             email,
             number,
             message,

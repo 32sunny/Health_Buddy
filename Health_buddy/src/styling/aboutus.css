@@ -1,0 +1,37 @@
+.about_con{
+    width: 100vw;
+    border: 1px solid rgb(250, 250, 250);
+    display: flex;
+    justify-content: end;
+    background-color: rgb(150, 181, 220);
+  padding-top: 100px;
+  margin-left: 180px;
+  span{
+    h1{
+        display: flex;
+        font-size: 46px;
+        font-weight: bold;
+        flex-direction: column; 
+        color: rgb(2, 2, 113);
+    }
+    p{
+      padding-top: 50px;
+      font-size: 16px;
+      color: rgb(45, 40, 40);
+   
+    }
+  }
+  }
+  
+  .content_pic {
+      background-image: url(https://www.bajajallianz.com/content/dam/bagic/health-insurance-new/best-health-insurance.png);
+      background-size: cover;               
+      background-position: center;
+      width: 500px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 200px;
+    }
+  

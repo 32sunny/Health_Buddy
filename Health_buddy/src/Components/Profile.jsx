@@ -32,7 +32,7 @@ const PatientForm = () => {
   // Fetch patient
   const fetchPatientByEmail = async (email) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/patients/email/${email}`);
+      const response = await axios.get(`https://deploy-backend-3-kp6o.onrender.com/api/patients/email/${email}`);
       setSelectedPatient(response.data); // Store patient data
       setLoading(false);
 
@@ -56,7 +56,7 @@ const PatientForm = () => {
     try {
       if (selectedPatient) {
        
-        await axios.put(`http://localhost:5000/api/patients/${selectedPatient._id}`, {
+        await axios.put(`https://deploy-backend-3-kp6o.onrender.com/api/patients/${selectedPatient._id}`, {
           name,
           email: userEmail,
           age,
@@ -66,7 +66,7 @@ const PatientForm = () => {
         toast('😊Profile updated successfully');
       } else {
         // Add new patient
-        await axios.post('http://localhost:5000/api/patients', {
+        await axios.post('https://deploy-backend-3-kp6o.onrender.com/api/patients', {
           name,
           email: userEmail,
           age,

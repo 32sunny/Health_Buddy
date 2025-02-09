@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import SignUp from './Authentication/Signup';
 import Login from './Authentication/Login';
-import Sidebar from './Components/Sidebarr';
+import Sidebar from './Components/Sidebar';
 import PatientForm from './Components/Profile';
 import Consultaion from './Components/Consultation';
 import Adoption from './Components/Adoption';
@@ -11,6 +11,7 @@ import CallForm from './Components/CallForm';
 import Footer from './Components/Footer'
 import ChatBot from './Components/Ai';
 import { useState } from 'react';
+import About_us from './Components/About_us';
 
 function Layout() {
   const location = useLocation();
@@ -29,6 +30,7 @@ function Layout() {
         <Route path="/profile" element={<PatientForm />} />
         <Route path="/Routine" element={<Adoption />} />
         <Route path="/CallForm" element={<CallForm />} />
+        <Route path="/About" element={<About_us />} />
       </Routes>
       <button onClick={()=>setChatbot(!Chatbot)} className='chat_button'> Start Chat </button>
        {Chatbot ? <ChatBot/> : ""}

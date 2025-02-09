@@ -1,13 +1,26 @@
 @import "tailwindcss";
 
-.chat_button{
+.chat_button {
    position: fixed;
    bottom: 50px;
    right: 50px;
    border-radius: 50%;
    width: 70px;
    height: 70px;
-   border: 3px solid rgb(45, 1, 204);
-   background-color: rgb(216, 205, 104);
-   color:rgb(8, 0, 126);
+   border: 3px solid #2D01CC; /* A deeper blue for contrast */
+   background-color: #F4D03F; /* A richer golden yellow */
+   color: #08007E; /* Dark blue text/icon */
+   font-size: 20px;
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+   transition: all 0.3s ease-in-out;
+   cursor: pointer;
+}
+
+.chat_button:hover {
+   background-color: #FFD700; /* Brighter golden yellow */
+   transform: scale(1.1); /* Slight enlargement on hover */
 }

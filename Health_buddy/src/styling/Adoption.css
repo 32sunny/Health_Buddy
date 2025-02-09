@@ -6,10 +6,10 @@
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     width: 90%;
     overflow: hidden;
-    margin-left: 250px;
+    margin-left: 300px;
    h1{
     font-size: 36px;
     font-weight: bold;

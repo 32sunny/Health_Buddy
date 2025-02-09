@@ -17,7 +17,7 @@ const SignUp = () => {
     e.preventDefault();
  
     try {
-      const response = await axios.post('http://localhost:5000/auth/register', {
+      const response = await axios.post('https://deploy-backend-3-kp6o.onrender.com/auth/register', {
         name,
         email,
         password,
